@@ -1,15 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React, {StrictMode} from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";  // make sure the file name is correct
+import App from "./App";
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
+
 if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+  console.error("❌ Root element not found! Make sure <div id='root'></div> exists.");
+  throw new Error("Root element missing");
 }
 
-const root = ReactDOM.createRoot(rootElement);
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
