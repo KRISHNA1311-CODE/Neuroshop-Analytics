@@ -2,7 +2,6 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { UserProfile, RecommendationResponse } from "../types";
 
 const initializeGenAI = () => {
-  
   const apiKey = process.env.API_KEY || ''; // In a real app, ensure this is set.
   if (!apiKey) {
     throw new Error("API Key not found in environment variables");
