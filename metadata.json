@@ -1,0 +1,5 @@
+{
+  "name": "NeuroShop Analytics",
+  "description": "AI-powered ecommerce dashboard that analyzes customer demographics and provides personalized product recommendations using Gemini 2.5 Flash.",
+  "requestFramePermissions": []
+}
